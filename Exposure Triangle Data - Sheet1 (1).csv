@@ -1,0 +1,28 @@
+Lighting,Speed,Depth of Field ,ISO,Aperture,Shutter Speed
+Sunny,Fast,Shallow,200- 600,2.8 - 4,1/1250 - 1/3000
+Sunny,Slow,Shallow,100 - 400,1.4 - 4,1/300 - 1/600
+Sunny,Still,Shallow,100 - 400 ,1.4 - 4,1/100 - 1/300
+Cloudy,Fast,Shallow,600 - 3000,2.8 - 4,1/1250 - 1/3000
+Cloudy,Slow,Shallow,300 - 600,1.4 - 4,1/300 - 1/600
+Cloudy,Still,Shallow,100 - 400 ,1.4 - 4,1/100 - 1/300
+Dark,Fast,Shallow,12000 - 48000,2.8 - 3,1/1250 - 1/3000
+Dark,Slow,Shallow,12000 - 48000,1.4 - 4,1/300 - 1/600
+Dark,Still,Shallow,6000 - 12000,1.4 - 4,1/100 - 1/300
+Sunny,Fast,Moderate,800 - 6000,4.5 - 8,1/1250 - 1/3000
+Sunny,Slow,Moderate,400 - 600,4.5 - 8,1/300 - 1/600
+Sunny,Still,Moderate,64 - 200,4.5 - 8,1/100 - 1/300
+Cloudy,Fast,Moderate,500 - 1000,4.5 - 8,1/1250 - 1/3000
+Cloudy,Slow,Moderate,400 - 700,4.5 - 8,1/300 - 1/600
+Cloudy,Still,Moderate,100 - 500 ,4.5 - 8,1/100 - 1/300
+Dark,Fast,Moderate,24000 - 48000,4.5 - 8,1/1250 - 1/3000
+Dark,Slow,Moderate,12000 - 24000,4.5 - 8,1/300 - 1/600
+Dark,Still,Moderate,6000 - 12000,4.5 - 8,1/100 - 1/300
+Sunny,Fast,Deep,600 - 4000,8 - 16,1/1250 - 1/3000
+Sunny,Slow,Deep,400 - 3000,8 - 16,1/300 - 1/600
+Sunny,Still,Deep,200 - 500,8 - 16,1/100 - 1/300
+Cloudy,Fast,Deep,3000 - 12000,8 - 16,1/1250 - 1/3000
+Cloudy,Slow,Deep,1250 - 6000,8 - 16,1/300 - 1/600
+Cloudy,Still,Deep,600 - 1000,8 - 16,1/100 - 1/300
+Dark,Fast,Deep,24000 - 108000,8 - 16,1/1250 - 1/3000
+Dark,Slow,Deep,12600 - 24000,8 - 16,1/300 - 1/600
+Dark,Still,Deep,4000 - 126000,8 - 16,1/100 - 1/300
