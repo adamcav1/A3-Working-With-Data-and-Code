@@ -1,0 +1,70 @@
+import csv
+import sys
+
+lighting_list = ["sunny", "cloudy", "dark"]
+speed_list = ["fast", "slow", "still"]
+depth_of_field_list = ["shallow", "moderate", "deep"]
+
+
+print('\nLighting list:\n')
+for i in lighting_list:
+  print(i)
+
+lighting = input('\nEnter what you want your lighting to be (-q to quit): ').strip()
+while True:
+  if lighting == '-q':
+    sys.exit()
+  elif lighting.lower() not in lighting_list:
+    print('\nInvalid choice. Please choose from the following: sunny, cloudy, dark')
+    lighting = input('\nEnter what you want your lighting to be (-q to quit): ').strip()
+  else:
+    break
+
+
+print('\nSpeed list:\n')
+for i in speed_list:
+  print(i)
+
+speed = input('\nEnter what you want your speed to be (-q to quit): ').strip()
+while True:
+  if speed == '-q':
+    sys.exit()
+  elif speed.lower() not in speed_list:
+    print('\nInvalid choice. Please choose from the following: fast, slow, still')
+    speed = input('\nEnter what you want your speed to be (-q to quit): ').strip()
+  else:
+    break
+
+print('\nDepth of Field list:\n')
+for i in depth_of_field_list:
+  print(i)
+
+depth_of_field = input('\nEnter what you want your depth of field to be (-q to quit): ').strip()
+while True:
+  if depth_of_field == '-q':
+    sys.exit()
+  elif depth_of_field.lower() not in depth_of_field_list:
+    print('\nInvalid choice. Please choose from the following: shallow, moderate, deep\n')
+    depth_of_field = input('\nEnter what you want your depth of field to be (-q to quit): ').strip()
+  else:
+    break
+
+fl = csv.reader(open('Exposure Triangle Data - Sheet1.csv'))
+first = True
+for row in fl:
+  if first:
+    first = False
+    continue
+  else:
+    lighting = lighting.capitalize()
+    speed = speed.capitalize()
+    depth_of_field = depth_of_field.capitalize()
+
+    if row[0] == lighting and row[1] == speed and row[2] == depth_of_field:
+      output = (row[3],row[4],row[5])
+      break
+
+print("\nThese are the reccomended range of settings to use.\n")
+print(f"ISO: {output[0]}")
+print(f"Apeture: {output[1]}")
+print(f"Shutter Speed: {output[2]}")
